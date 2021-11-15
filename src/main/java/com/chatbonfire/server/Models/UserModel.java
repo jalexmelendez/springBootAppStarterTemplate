@@ -1,19 +1,26 @@
 package com.chatbonfire.server.Models;
 
 import java.util.Objects;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class UserModel {
 
-    public final Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Integer id;
 
     public String mail;
 
+    public String phone;
+
     public String password;
 
-    public UserModel(Integer id, String name, String password) {
-        this.id = id;
-        this.mail = name;
-        this.password = password;
-    }
+    public String name;
+
+    public String last_name;
 
 }

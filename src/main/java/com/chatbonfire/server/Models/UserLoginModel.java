@@ -11,12 +11,4 @@ public class UserLoginModel {
         this.password = password;
     }
 
-    public static Object Login(String mail, String password) {
-        return 0;
-    }
-
-    public static String Token(UserModel user) {
-        return "0";
-    }
-
 }
